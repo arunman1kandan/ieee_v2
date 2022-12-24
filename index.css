@@ -1,0 +1,94 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primaryBlue:#07294D;
+    --secondaryBlue:#6EC1E4;
+}
+
+ul
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.topLayer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--primaryBlue);
+    height: 4rem;
+    padding: 1rem;
+    color: white;
+}
+
+.floatLeft
+{
+    display: flex;
+    gap:5rem;
+}
+
+.floatRight
+{
+    display: flex;
+    gap: 2rem;
+}
+nav{
+    text-decoration: none;
+    height: 4vh;
+}
+nav>ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none !important;
+    justify-content: space-around;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+.logo
+{
+    transform: scale(1);
+}
+.navRight
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.carousel
+{
+    position: relative;
+    transform: translateY(2%);
+}
+.carousel-item>img
+{
+    height: 87.5vh;
+}
+
+.about-us
+{
+    margin-top: 10.9rem;
+    height: 90vh;
+    display: grid;
+    grid-auto-columns: minmax(auto,1fr);
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-areas: "col1 col2";
+}
